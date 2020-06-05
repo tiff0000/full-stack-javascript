@@ -4,7 +4,6 @@ const path = require("path");
 const exphbs = require("express-handlebars");
 const bodyparser = require("body-parser");
 const orderController = require("./controllers/orderController");
-require("dotenv").config();
 
 var app = express();
 app.use(
@@ -23,6 +22,7 @@ app.engine(
     layoutsDir: __dirname + "/views/"
   })
 );
+
 app.set("view engine", "hbs");
 app.listen(3000, () => {
   console.log("Server on port: 3000");
