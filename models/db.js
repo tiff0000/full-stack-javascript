@@ -1,9 +1,13 @@
-const mongoose= require('mongoose');
-mongoose.connect('mongodb://localhost:27017/ecommerceOrders',{useNewUrlParser:true},(err)=>{
+const mongoose = require("mongoose");
+mongoose.connect(
+  "mongodb+srv://tiff000:tiff000@cluster0-syk1l.mongodb.net/onlineCourseShop?retryWrites=true&w=majority",
+  { useNewUrlParser: true },
+  err => {
     if (!err) {
-        console.log('MongoDB connected');
+      console.log("MongoDB connected");
     } else {
-        console.log('error: '+err);
+      console.log("error: " + err);
     }
-});
-require('./order.model');
+  }
+);
+require("./order.model");
