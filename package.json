@@ -2,9 +2,10 @@
   "name": "full-stack-javascript",
   "version": "1.0.0",
   "description": "A full web application using:",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
