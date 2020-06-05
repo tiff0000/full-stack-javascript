@@ -1,15 +1,15 @@
 //GLOBAL
-var products= JSON.parse(localStorage.getItem('cart'));
-var cartItems=[];
-var cart_n = document.getElementById('cart_n');
-var table= document.getElementById('table');
-var total=0;
+var products = JSON.parse(localStorage.getItem("cart"));
+var cartItems = [];
+var cart_n = document.getElementById("cart_n");
+var table = document.getElementById("table");
+var total = 0;
 
 //HTML
 function tableHTML(i) {
-    return `
+  return `
             <tr>
-                <th scope="row">${i+1} </th>
+                <th scope="row">${i + 1} </th>
                 <th><img style="width:90px;" src="${products[i].url}"></th>
                 <td>${products[i].name}</td>
                 <td>1</td>
@@ -19,13 +19,13 @@ function tableHTML(i) {
 }
 //CLEAN
 function clean() {
-    localStorage.clear();
-    for (let index = 0; index < products.length; index++) {
-        table.innerHTML+= tableHTML(index);
-        total=total+parseInt(products[index].price);
-    }
-    total=0;
-    table.innerHTML=`
+  localStorage.clear();
+  for (let index = 0; index < products.length; index++) {
+    table.innerHTML += tableHTML(index);
+    total = total + parseInt(products[index].price);
+  }
+  total = 0;
+  table.innerHTML = `
         <tr>
             <th></th>
             <th></th>
@@ -34,17 +34,17 @@ function clean() {
             <th></th>
         </tr>
     `;
-    cart_n.innerHTML='';
-    document.getElementById("btnBuy").style.display="none";
-    document.getElementById("btnClean").style.display="none";
+  cart_n.innerHTML = "";
+  document.getElementById("btnBuy").style.display = "none";
+  document.getElementById("btnClean").style.display = "none";
 }
 
-(()=>{
-    for (let index = 0; index <products.length; index++) {
-       table.innerHTML+=tableHTML(index);
-       total=total+parseInt(products[index].price);
-    }
-    table.innerHTML+=`
+(() => {
+  for (let index = 0; index < products.length; index++) {
+    table.innerHTML += tableHTML(index);
+    total = total + parseInt(products[index].price);
+  }
+  table.innerHTML += `
         <tr>
             <th scope="col"></th>
             <th scope="col"></th>
@@ -70,18 +70,18 @@ function clean() {
         </th>
         </tr>
     `;
-    products=JSON.parse(localStorage.getItem('cart'));
-    cart_n.innerHTML=`[${products.length}]`;
+  products = JSON.parse(localStorage.getItem("cart"));
+  cart_n.innerHTML = `[${products.length}]`;
 })();
-var form= document.getElementById('form1');
-document.getElementById('submitbtn').addEventListener('click',()=>{
-    localStorage.clear();
-    setTimeout(()=>{
-        sub();
-    },5000);
+var form = document.getElementById("form1");
+document.getElementById("submitbtn").addEventListener("click", () => {
+  localStorage.clear();
+  setTimeout(() => {
+    sub();
+  }, 5000);
 });
 function sub() {
-        setTimeout(()=>{
-            form.submit();
-        },5000);
+  setTimeout(() => {
+    form.submit();
+  }, 5000);
 }

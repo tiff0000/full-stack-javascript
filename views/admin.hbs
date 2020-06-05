@@ -1,8 +1,9 @@
-<nav class="navbar fixed-top navbar-dark navbar-expand-md bg-success text-white">
-    <a class="text-white navbar-brand" href="/"> 
-        <i class="fab fa-pagelines"></i> Organic Store
+<nav class="navbar fixed-top navbar-dark navbar-expand-md bg-danger text-white">
+    <a class="text-white navbar-brand" href="/">
+        <i class="fab fa-pagelines"></i> Online Tutoring Courses
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -28,18 +29,18 @@
                         </thead>
                         <tbody>
                             {{#each order}}
-                                <tr>
-                                    <td>{{this._id}}</td>
-                                    <td>{{this.order}}</td>
-                                    <td>{{this.total}}</td>
-                                    <td>
-                                  <a class="btn btn-primary" href="/order/{{this._id}}">Update</a>
-                                <a class="btn btn-danger" href="/order/delete/{{this._id}}">Delete</a>
-                                        
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td>{{this._id}}</td>
+                                <td>{{this.order}}</td>
+                                <td>{{this.total}}</td>
+                                <td>
+                                    <a class="btn btn-primary" href="/order/{{this._id}}">Update</a>
+                                    <a class="btn btn-danger" href="/order/delete/{{this._id}}">Delete</a>
+
+                                </td>
+                            </tr>
                             {{/each}}
-                        </tbody>                        
+                        </tbody>
                     </table>
                 </div>
             </div>

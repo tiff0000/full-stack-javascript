@@ -1,3 +1,7 @@
-.imgFilter{
-    filter: brightness(0.80);
+.navbar {
+  color: rgb(54, 112, 194);
+}
+
+.imgFilter {
+  filter: brightness(0.8);
 }
