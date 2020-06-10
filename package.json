@@ -1,26 +1,19 @@
 {
-  "name": "full-stack-javascript",
+  "name": "EcommerceNodejsCrud",
   "version": "1.0.0",
-  "description": "A full web application using:",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tiff0000/full-stack-javascript.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tiff0000/full-stack-javascript/issues"
-  },
-  "homepage": "https://github.com/tiff0000/full-stack-javascript#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^4.0.4",
-    "mongoose": "^5.9.17"
+    "body-parser": "^1.18.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mongoose": "^5.4.17"
   }
 }

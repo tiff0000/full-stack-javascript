@@ -1,15 +1,11 @@
-# full stack javascript
+# full-stack-javascript
 
-A full web application using:
+An online tutorial web app that allows students to buy tutorial courses, tutorial videos and study notes.
 
-Front-end:
-html/css
-handlebars
+![](/Users/tiffany/Desktop/full-stack-javascript/online-tut1.png)
 
-Backend:
-Javascript 
-Node.js
-MongoDB
+![](/Users/tiffany/Desktop/full-stack-javascript/online-tut2.png)
 
+![](/Users/tiffany/Desktop/full-stack-javascript/online-tut3.png)
 
-A web application that allows users to shop items, by adding them to the cart, edit their order, and update their orders.
+![](/Users/tiffany/Desktop/full-stack-javascript/online-tut4.png)
